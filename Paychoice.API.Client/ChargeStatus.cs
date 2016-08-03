@@ -9,8 +9,10 @@ namespace Paychoice.API.Client
     public enum ChargeStatus : int
     {
         Approved = 0,
-        Pending = 1,
-        Errored = 2,
-        Dishonoured = 3
+        ApprovedWithErrors = 1,
+        Dishonoured = 5,
+        Error = 6,
+        Processing = 9,
+        Voided = 99
     }
 }
